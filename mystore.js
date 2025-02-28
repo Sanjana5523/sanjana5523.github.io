@@ -76,7 +76,7 @@ const showProducts = (data) => {
     <h3>${value.name}</h3>
     <p>${value.desc}</p>
     <h4>$${value.price}</h4>
-    <button onclick='addToCart(${value.id})'>Add to Cart</button>
+    <button onclick='addToCart(${value.id})' class="btnAdd" >Add to Cart</button>
     </div>
     `;
   });
