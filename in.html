@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .header {
+        background-color: rgb(255, 165, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header a {
+        text-decoration:none;
+      }
+      .header li {
+        display: inline-block;
+        padding: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        padding :100px;
+        height:600px;
+        align-items: center;
+      }
+      .row .box {
+        border: solid 1px silver;
+        margin: 10px;
+        width: 300px;
+        padding:100px;
+
+      }
+      .row2 {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(135, 183, 222);
+        height:600px;
+        padding:100px;
+        align-items: center;
+      }
+      .row2 .box {
+        
+        width: 500px;
+        margin: 10px;
+        background: white;
+        height: 300px;
+        padding: 90px;
+        
+      }
+      .footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      h4{
+        text-align: center;
+        font-size: 1;
+      }
+      img {
+        width: 300px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div>
+          <h1>My Store</h1>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="box">
+          <img src="assets/1.png" style="border:6px solid black;" />
+          <h3>Milk SHAKE</h3><br>
+          <p>At Milkshake Haven, we specialize in crafting the most delightful and 
+            indulgent milkshakes that tantalize your taste buds. Our milkshakes are 
+            made with the finest ingredients, combining rich, creamy ice cream with fresh milk and a variety of mouthwatering flavors. Whether you're a fan of classic vanilla, crave the richness of chocolate,
+             ,we've got something to satisfy every palate.</p>
+          <h3>Price:150rs.</h3>
+          <button>Add to Cart</button>
+        </div>
+        <div class="box">
+          <img src="assets/2.png" style="border:6px solid black;"/>
+          <h3>COLD COFFEE</h3><br>
+          <p>At Cold Coffee Haven, we are dedicated to serving the most refreshing and invigorating cold coffee beverages. Our cold coffees are crafted with premium coffee beans, blended with fresh milk, and infused with 
+            delightful flavors to create the perfect drink to cool you down and lift your spirits.Come visit us at Cold Coffee Haven and indulge in a cold coffee experience like no other.</p>
+          <h3>Price 100rs.</h3>
+          <button>Add to Cart</button>
+        </div>
+        <div class="box">
+          <img src="assets/3.png" style="border:6px solid black;"/>
+          <h3>SANDWICH</h3><br>
+          <p>At Sandwich Haven, we take pride in crafting the finest and most delicious sandwiches you'll ever taste.
+            Our sandwiches are made with fresh, high-quality ingredients, ensuring a perfect blend of flavors and textures in every bite.
+             Whether you're craving a classic ham and cheese,or a refreshing veggie delight, we've got something for everyone.</p>
+          <h3> Price:250rs.</h3>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="row2">
+        <img src="./assets/burger.jpg" style="border:6px solid black;"/>
+        <div class="box" >
+          <h3>BURGER </h3>
+          <br>
+          <h4>
+            A burger is a popular and versatile sandwich that typically consists of a cooked patty of ground meat, usually beef, placed inside a sliced bread roll or bun. The patty can also be made from other meats like chicken, turkey, or pork, as well as vegetarian alternatives such as beans, lentils, or plant-based proteins.
+          </h4>
+        </div>
+      </div>
+
+      <div class="row2" style="background-color: aliceblue;">
+        <div class="box" >
+            <h3>PIZZA</h3>
+            <br>
+            <h4>
+              Pizza is beloved dish that originated in Italy and has become a global favorite. It typically consists of a round, flat base of leavened wheat-based dough, topped with tomatoes, cheese, and various other ingredients such as meats, vegetables, and condiments. The pizza is then baked at a high temperature, traditionally in a wood-fired oven, to achieve a crispy crust and melted toppings.
+            </h4>
+          </div>
+        
+          <img src="./assets/pizza.jpg" style="border:6px solid black; width: 300px;height:300px;"/>
+       
+        
+      </div>
+
+      <div class="footer">
+        <footer>@Copyright 2024. All rights reserved.</footer>
+      </div>
+
+    </div>
+  </body>
+</html>

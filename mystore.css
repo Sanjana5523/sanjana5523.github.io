@@ -1,0 +1,30 @@
+.row{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.box{
+    width:300px;
+    border:1px solid rgb(230, 39, 39);
+    border-radius: 20px;
+    padding:20px;
+    margin:20px;
+}
+.btnAdd{
+    background-color: rgb(47, 183, 70);
+    font-size: 20px;
+    color:rgb(210, 194, 194);
+    width:100%;
+    padding:10px;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.menu{
+    display:flex;
+}
+.menu div{
+    padding:10px;
+}

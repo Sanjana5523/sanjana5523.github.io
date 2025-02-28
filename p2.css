@@ -1,0 +1,31 @@
+
+/* form{
+    background-color: blue;
+    align-items: center;
+    margin: auto;
+    display: flex;
+} */
+ .sbtn{
+    background-color: green;
+    color: aqua;
+ }
+.r{
+    background-color: rgb(231, 213, 237);
+    padding:20px;
+    border-radius: 1px;
+    text-align: center;
+}
+.root{
+    background-color: rgba(147, 233, 173, 0.842);
+    justify-content: center;
+    display:flex;
+   
+    
+}
+.container {
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+  }

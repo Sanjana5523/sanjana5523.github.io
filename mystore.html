@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystore.css" />
+    <script src="mystore.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Store</h1>
+      <input type="text" id="searchInput" size="50px" placeholder="Search...">
+    <button onclick="searchFunction()" class="sbtn">Search</button>
+      <div class="menu"></div>
+      <h4 onclick="hideCart()">Home</h4>
+      <h4 onclick="displayCart()">Cart:<span id="items"></span></h4>
+    </div>
+
+    <hr />
+
+    <div id="productBox">
+      <div id="divProducts"></div>
+    </div>
+    
+    <div id="cartBox" style="display: none">
+      <h3>My Cart</h3>
+      <div id="divCart"></div>
+      <h4>Order value:<span id="order"></span></h4>
+      <button onclick="hideCart()">Close</button><br></br>
+      <button>orders</button>
+    </div>
+    <hr />
+    <h4>@Copyright 2025. All rights reserved.</h4>
+  </body>
+</html>
