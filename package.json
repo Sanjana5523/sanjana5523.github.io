@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "mystore.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
     "url": "https://github.com/Sanjana5523/sanjana5523.github.io/issues"
   },
   "homepage": "https://github.com/Sanjana5523/sanjana5523.github.io#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  }
 }
