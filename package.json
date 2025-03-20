@@ -1,0 +1,20 @@
+{
+  "name": "sanjana5523.github.io",
+  "version": "1.0.0",
+  "main": "mystore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanjana5523/sanjana5523.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanjana5523/sanjana5523.github.io/issues"
+  },
+  "homepage": "https://github.com/Sanjana5523/sanjana5523.github.io#readme",
+  "description": ""
+}
