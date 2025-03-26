@@ -1,32 +1,87 @@
- [
-    { "id": 1,
-      "name": "Product 1", 
-      "price": 25,
-      "desc":"This product is good",
-      "url": "https://picsum.photos/seed/picsum/200/300" },
-    { "id": 2, 
-      "name": "Product 2", 
-      "price": 45,
-      "desc":"This product is Amazing",
-    "url": "https://picsum.photos/seed/picsum/200/300" },
-    { "id": 3, 
-      "name": "Product 3", 
-      "price": 30 ,
-      "desc":"This product is fabulous",
-      "url": "https://picsum.photos/200/300?grayscale" },
-      { "id": 4, 
-      "name": "Product 4", 
-      "price": 80 ,
-      "desc":"This product is fabulous",
-      "url": "https://picsum.photos/200/300?grayscale" },
-      { "id": 5, 
-      "name": "Product 5", 
-      "price": 30 ,
-      "desc":"This product is fabulous",
-      "url": "https://picsum.photos/200/300?grayscale" },
-      { "id": 6, 
-      "name": "Product 6", 
-      "price": 80 ,
-      "desc":"This product is fabulous",
-      "url": "https://picsum.photos/200/300?grayscale" }
-  ]
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "desc": "High-quality sound with noise cancellation.",
+    "price": 49.99,
+    "url":"./assets/p3airpods.jpg" 
+  },
+  
+  {
+    "id": 9,
+   "name": "Google Pixel Smartphone",
+  "desc": "Clean Android experience.",
+  "price": 599.99,
+    "url": "./assets/p3googlepixel.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Headset",
+    "desc": "High-quality sound with noise cancellation.",
+    "price": 39.99,
+    "url": "./assets/p3headset.jpg"
+  },
+  {
+      "id": 4,
+      "name": "Dell Laptop",
+    "desc": "Fast and reliable for work and play.",
+    "price": 799.99,
+      "url": "./assets/p3laptop.jpg"
+    },
+    {
+      "id": 5,
+      "name": "iphone Smartphone",
+      "desc": "Latest model with amazing camera.",
+      "price": 699.99,
+      "url": "./assets/p3phone.jpeg"
+    },
+    {
+      "id": 6,
+     "name": "Smartwatch Pro",
+    "desc": "Advanced tracking and sleek design.",
+    "price": 129.99,
+      "url": "./assets/p3smartwatch.webp"
+    },
+    {
+      "id": 10,
+      "name": "OnePlus Smartphone",
+      "desc": "Smooth performance and OxygenOS.",
+      "price": 549.99,
+      "url": "./assets/p3oneplus.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Dell Inspiron Laptop",
+    "desc": "Reliable laptop for everyday use.",
+    "price": 649.99,
+      "url": "./assets/p3dell-laptop.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "desc": "Track your fitness and receive notifications.",
+      "price": 23.99,
+      "url": "./assets/p3watch.png"
+    },
+    {
+      "id": 7,
+      "name": "ASUS TUF Laptop",
+      "desc": "Gaming laptop with RTX graphics.",
+      "price": 999.99,
+      "url": "./assets/p3asustuf.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Samsung Galaxy Smartphone",
+      "desc": "Flagship phone with AMOLED display.",
+      "price": 749.99,
+      "url": "./assets/p3samsung.webp"
+    },
+    {
+      "id": 12,
+      "name": "Galaxy Tab A9",
+      "desc": "Lightweight tablet perfect for entertainment and productivity on the go.",
+      "price": 39.99,
+      "url": "./assets/p3tab.jpg"
+    }
+]

@@ -1,22 +1,30 @@
-let products = []
-
+let products = [];
 
 fetch("products.json")
-  .then((response) => response.json()) 
-  .then((data) => (showProducts(data))) 
-  
+  .then((response) => response.json())
+  .then((data) => {
+    products = data;
+    showProducts(products); 
+  });
 
 const cart = {};
+
 const addToCart = (id) => {
   if (!cart[id]) cart[id] = 1;
   showCart();
 };
+
 const increment = (id) => {
-  cart[id] = cart[id] + 1;
+  cart[id]++;
   showCart();
 };
+
 const decrement = (id) => {
-  cart[id] = cart[id] - 1;
+  if (cart[id] > 1) {
+    cart[id]--;
+  } else {
+    deleteCart(id);
+  }
   showCart();
 };
 
@@ -34,16 +42,20 @@ const deleteCart = (id) => {
   delete cart[id];
   showCart();
 };
+
 function searchFunction() {
-  let query = document.getElementById("searchInput").value;
-  alert("You searched for: " + query);
+  const query = document.getElementById("searchInput").value.toLowerCase();
+  const filtered = products.filter((p) =>
+    p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query)
+  );
+  showProducts(filtered);
 }
 
 const showTotal = () => {
   let total = products.reduce((sum, value) => {
     return sum + value.price * (cart[value.id] ?? 0);
   }, 0);
-  order.innerHTML = total;
+  order.innerHTML = total.toFixed(2);
 };
 
 const showCart = () => {
@@ -51,33 +63,32 @@ const showCart = () => {
   items.innerHTML = count;
   showTotal();
   let str = "";
-  products.map((value) => {
+  products.forEach((value) => {
     if (cart[value.id]) {
       str += `<div>
-      ${value.id}-${value.name}-${value.price}-
-      <button onclick='decrement(${value.id})'>-</button>
-      ${cart[value.id]}
-      <button onclick='increment(${value.id})'>+</button>
-      -${value.price * cart[value.id]}
-      -<button onclick='deleteCart(${value.id})'>Delete</button>
-    
+        ${value.name} - $${value.price} 
+        <button onclick='decrement(${value.id})'>-</button>
+        ${cart[value.id]}
+        <button onclick='increment(${value.id})'>+</button>
+        = $${(value.price * cart[value.id]).toFixed(2)}
+        <button onclick='deleteCart(${value.id})'>Delete</button>
       </div>`;
     }
   });
   divCart.innerHTML = str;
 };
-const showProducts = (data) => {
-  products = data
+
+const showProducts = (productList) => {
   let str = "<div class='row'>";
-  products.map((value) => {
+  productList.forEach((value) => {
     str += `
-    <div class='box'>
-    <img src='${value.url}'>
-    <h3>${value.name}</h3>
-    <p>${value.desc}</p>
-    <h4>$${value.price}</h4>
-    <button onclick='addToCart(${value.id})' class="btnAdd" >Add to Cart</button>
-    </div>
+      <div class='box'>
+        <img src='${value.url}' />
+        <h3>${value.name}</h3>
+        <p>${value.desc}</p>
+        <h4>$${value.price}</h4>
+        <button onclick='addToCart(${value.id})' class="btnAdd">Add to Cart</button>
+      </div>
     `;
   });
   divProducts.innerHTML = str + "</div>";

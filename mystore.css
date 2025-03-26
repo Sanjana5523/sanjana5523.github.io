@@ -1,36 +1,142 @@
-.sbtn{
-    background-color: rgb(82, 218, 82);
-    width:30%;
-    border-radius: 2px;
-}
-.row{
-    display:flex;
-    justify-content: center;
-    flex-wrap:wrap;
-}
-.box{
-    width:300px;
-    border:1px solid rgb(230, 39, 39);
-    border-radius: 20px;
-    padding:20px;
-    margin:20px;
-}
-.btnAdd{
-    background-color: rgb(47, 183, 70);
-    font-size: 20px;
-    color:rgb(210, 194, 194);
-    width:100%;
-    padding:10px;
-    border-radius: 2px;
-}
-.header{
-    display:flex;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
     justify-content: space-between;
-    padding:20px;
-}
-.menu{
-    display:flex;
-}
-.menu div{
-    padding:10px;
-}
+    align-items: center;
+    padding: 20px;
+    background-color: #4caf50;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+  }
+  
+  .sbtn {
+    background-color: #ffffff;
+    color: #4caf50;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .sbtn:hover {
+    background-color: #e6ffe6;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu h4 {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 280px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .box h3 {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .box p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .box h4 {
+    color: #111;
+    margin: 10px 0;
+  }
+  
+  .btnAdd {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btnAdd:hover {
+    background-color: #45a049;
+  }
+  
+  #cartBox {
+    padding: 20px;
+    background-color: #fff8f0;
+  }
+  
+  .btnClose, .btnOrder {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btnClose {
+    background-color: #ddd;
+  }
+  
+  .btnOrder {
+    background-color: #f57c00;
+    color: white;
+  }
+  
+  footer {
+    color: #e6ffe6;
+    text-align: center;
+    padding: 20px;
+    background-color: #302f2f;
+  }
+  
