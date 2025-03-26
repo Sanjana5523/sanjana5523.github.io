@@ -1,194 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name</title>
+    <title>Sanjana Ganji | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Sanjana Ganji</h1></div>
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row" id="home">
-        <div style="display: flex;padding-top: 50px;">
-          <div class="box">
-            <h1>Full Stack Developer</h1>
-            <p>
-                Hi, I'm Sanjana, a dedicated Full Stack Developer with a passion for crafting dynamic and responsive web applications. My expertise spans both front-end and back-end development, allowing me to deliver comprehensive solutions that meet user needs and business goals.
-            </p>
-            <button>Button 1</button>
-            <button>Button 1</button>
-          </div>
-          <div class="box">
-            <img src="lap.jpg" />
+    <header class="header">
+      <h1 class="logo">Sanjana Ganji</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="home-section">
+      <div class="home-content">
+        <div class="text-box">
+          <h1 class="intro">Hey, I'm <span class="name">Sanjana</span></h1>
+          <h2 class="title">A <span class="highlight">Full Stack Developer</span></h2>
+          <p class="description">Hi, I'm Sanjana, a dedicated Full Stack Developer with a passion for crafting dynamic and responsive web applications. My expertise spans both front-end and back-end development, allowing me to deliver comprehensive solutions that meet user needs and business goals.Passionate about building dynamic and responsive web applications.
+             Let's turn ideas into reality.
+          </p>
+          <div class="buttons">
+            <a href="#portfolio" class="btn primary">My Resume</a>
+            <a href="#contact" class="btn secondary">Get in Touch</a>
           </div>
         </div>
-      </div>
-
-      <div id="projects" class="row" style="background-color: lightcoral">
-        <h1>Projects</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Project 2</h3>
-            <a href="p1.html">Project 1</a>
-            <p>
-                Foodie Delight is a user-friendly mobile application designed to revolutionize the way you order food. Whether you're craving a quick snack or planning a gourmet meal, Foodie Delight has got you covered.
-                Foodie Delight offers an intuitive and seamless user experience. 
-                Foodie Delight is your go-to app for all your food cravings, making dining in or out a delightful experience.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 2</h3>
-            <a href="p2index.html">Project 2</a>
-            <p>
-              Welcome to My Bank Application – your comprehensive digital banking solution designed to make managing your finances easier, more efficient, and secure. With our user-friendly interface and robust features,
-               we provide a seamless banking experience that caters to all your financial needs.
-               my bank application where we can deposit,withdraw amd transfer money.Join us at My Bank Application and experience the future of digital banking. Simplify your financial management with our reliable, secure, and user-friendly platform.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 3</h3>
-            <a href="mystore.html">Project 3</a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. 
-            </p>
-          </div>
-          <div class="box">
-            <h3>Project 4</h3>
-            <a href="project 4c/index.html">Project 4</a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet.
-            </p>
-          </div>
-          <div class="box">
-            <h3>Project 5</h3>
-            <a href="social media/socialmedia.html">Project 5</a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. 
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 6</h3>
-            <a href="./react-store-a-build/index.html">Project 6</a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. 
-            </p>
-          </div>
-
+        <div class="image-box">
+          <img src="./assets/lap.jpg" alt="Laptop image" />
         </div>
       </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Web App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
+    </section>
+    
 
-          <div class="box">
-            <h3>Mobile App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
+    <section id="projects" class="section">
+      <h1 class="section-title">My Projects</h1>
+      <div id="projects" class="projects-container">
+          <div class="project-box">
+              <img src="assets/cake.jpg" alt="Foodie Delight">
+              <h3>Foodie Delight</h3>
+              <p>A food delivery application offering a seamless experience for ordering your favorite meals.</p>
+              <a href="p1.html" class="view-project-btn">View Project</a>
           </div>
+          <div class="project-box">
+              <img src="./assets/mybank.jpeg" alt="My Bank App">
+              <h3>My Bank Application</h3>
+              <p>A digital banking solution with secure features for deposits, withdrawals, and transfers.</p>
+              <a href="p2index.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="./assets/touch.webp" alt="Online Store">
+              <h3>Online Store</h3>
+              <p>An e-commerce platform where users can browse products, add them to the cart, and checkout.</p>
+              <a href="mystore.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="./assets/graduation.jpeg" alt="Carousel Website">
+              <h3>My College</h3>
+              <p>A visually appealing website using Bootstrap carousels to showcase engaging content.</p>
+              <a href="project 4c/index.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="./assets/socialmedia.jpeg" alt="Social Media">
+              <h3>Social Media Website</h3>
+              <p>A dynamic social media platform with user authentication, posts, and profile management.</p>
+              <a href="social media/socialmedia.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="./assets/onlinestore.png" alt="React Store">
+              <h3>React Online Store</h3>
+              <p>An online shopping platform built with React, ensuring a smooth and responsive experience.</p>
+              <a href="./react-store-a-build/index.html" class="view-project-btn">View Project</a>
+          </div>
+      </div>
+  
+    </section>
 
-          <div class="box">
-            <h3>Backend Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
+  
+    <section id="about" class="section">
+      <div class="about-container">
+        <h1 class="section-title">About Me</h1>
+        <p class="about-description">
+          I’m a passionate Full Stack Developer specializing in <strong>Java</strong>, <strong>Python</strong>, and <strong>React.js</strong>. I love building tech-driven solutions that make an impact.
+        </p>
+    
+        <h2 class="skills-title">Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="assets/java.webp" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="skill-card">
+            <img src="assets/python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-card">
+            <img src="assets/react.jpeg" alt="React" />
+            <span>React.js</span>
           </div>
         </div>
       </div>
-      <div id="about" class="row">
-        <h1>About</h1>
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-          ipsa veniam deserunt asperiores nesciunt at provident itaque
-          cupiditate vel dolor.
-        </h3>
-        <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
-        <p>Display the logo of all the technologies you know.</p>
-      </div>
-      <div
-        id="contact"
-        class="row"
-        style="background-color: lightgoldenrodyellow"
-      >
-        <h1>Contact</h1>
-        <div style="display: flex">
-         
-
-          <div class="box">
-            <h3>Contact Form</h3>
-            <p>
-             <input type="text" placeholder="Enter Name">
-            </p>
-            <p>
-              <input type="email" placeholder="Enter Email">
-             </p>
-             <p>
-              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-             </p>
-             <button>Send</button>
+    </section>
+    
+    <section id="contact">
+      <h1 class="section-title">Let's Connect</h1>
+      <h2 class="contact-intro">Have a project or want to collaborate? I'd love to hear from you!</h2>
+  
+      <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <div class="contact-card contact-form">
+          <h3>Send a Message</h3>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="button">Send Message</button>
+        </div>
+  
+        <!-- Contact Details -->
+        <div class="contact-card contact-details">
+          <h3>Reach Out</h3>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>sample@email.com</span>
           </div>
-
-          <div class="box">
-            <h3>Your/Company Name</h3>
-            <p>
-              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-            <p>
-              <b>Email Address: </b>sample@email.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 343 445 6789
-            </p>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 343 445 6789</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Bangalore, India</span>
+          </div>
+          <div class="social-icons" style="margin-top: 20px;">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
-      <div class="footer">@copyright 2024. All rights reserved.</div>
-    </div>
+    </section>
+
+    <footer class="footer">
+      &copy; 2025 Sanjana Ganji.@All rights reserved.
+    </footer>
   </body>
 </html>
